@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "229842654270",
+    "project_id": "samiocare-acf22",
+    "storage_bucket": "samiocare-acf22.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:229842654270:android:35ab86bf7fd197e4bf6d6f",
+        "android_client_info": {
+          "package_name": "com.example.samiocare_app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDck-dFmaUYu9VDr_ekyrOy3Ik0-GiNHbw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
