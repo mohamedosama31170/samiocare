@@ -21,6 +21,7 @@ class FirebaseApi {
 
   Future<void> initNotifications() async {
     await _firebaseMessaging.requestPermission();
+    //listenForToken();
     await _firebaseMessaging.subscribeToTopic('general');
 
     // init local notifications
@@ -85,4 +86,20 @@ class FirebaseApi {
         >();
     await platform?.createNotificationChannel(_androidChannel);
   }
+
+//   void listenForToken() {
+//   // This will fire when the token is initially generated and on refresh
+//   _firebaseMessaging.onTokenRefresh.listen((token) {
+//     print('New APNS/FCM Token: $token');
+//     // Send this token to your backend server here
+//     // Example: await sendTokenToServer(token);
+//   });
+
+//   // Also try to get the current token immediately (might still be null)
+//   _firebaseMessaging.getToken().then((token) {
+//     if (token != null) {
+//       print('Current FCM Token: $token');
+//     }
+//   });
+// }
 }
